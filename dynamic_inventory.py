@@ -23,7 +23,7 @@ for strTemp in routerList:
  routerString = strTemp
 
 for strRouterName,interfaces in iter(routerString.items()):
-   verifyIPAddress = interfaces['management']['ip-address']
-   while verifyIPAddress != "None":
-     print(strRouterName,interfaces['management']['ip-address'])
-     verifyIPAddress = "None"
+    verifyIPAddress = interfaces['management']['ip-address']
+    while verifyIPAddress != "None":
+        print(strRouterName,interfaces['management']['ip-address'])
+        verifyIPAddress = "None"
