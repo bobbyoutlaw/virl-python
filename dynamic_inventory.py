@@ -22,6 +22,8 @@ routerList = list(routerDict.values())
 for strTemp in routerList:
  routerString = strTemp
 
-for site,interfaces in iter(routerString.items()):
-   while interfaces['management']['ip-address']!= "None":
-     print(site,interfaces['management']['ip-address'])
+for strRouterName,interfaces in iter(routerString.items()):
+   verifyIPAddress = interfaces['management']['ip-address']
+   while verifyIPAddress != "None":
+     print(strRouterName,interfaces['management']['ip-address'])
+     verifyIPAddress = "None"
